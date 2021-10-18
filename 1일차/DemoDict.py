@@ -15,3 +15,8 @@ for item in device.items():
 print('---key, value---')
 for n, k in device.items():
 	print(n, k)
+
+
+phone = {'kim':1111, 'lee':2222}
+p = phone
+print(phone['kim'], phone['lee'])
