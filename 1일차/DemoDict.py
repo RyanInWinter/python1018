@@ -20,3 +20,15 @@ for n, k in device.items():
 phone = {'kim':1111, 'lee':2222}
 p = phone
 print(phone['kim'], phone['lee'])
+
+
+# 교집합을 구하는 함수
+def intersect(prelist, postlist):
+	result = []
+	for x in prelist :
+		if x in postlist and x not in result : 
+			result.append(x)
+	return result
+
+# 함수 호출
+print(intersect("Ham", "Spam"))
